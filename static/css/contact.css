@@ -1,0 +1,12 @@
+input[type=text], input[type=email], textarea {
+ width: 90%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ color: darkred;
+ background-color: black;
+}
+input[type=submit]{
+ color: blue;
+ background-color: darkred;
+}

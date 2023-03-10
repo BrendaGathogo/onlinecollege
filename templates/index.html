@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+        {% load static %}
+       <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>AcadeWe</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+{#      <div class="header_section">#}
+{#         <div class="container">#}
+{#            <nav class="navbar navbar-expand-lg navbar-light bg-light">#}
+{#               <a class="navbar-brand"href="index.html"><img src="{% static 'img/logo.png' %}"></a>#}
+{#               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#               <span class="navbar-toggler-icon"></span>#}
+{#               </button>#}
+{#               <div class="collapse navbar-collapse" id="navbarSupportedContent">#}
+{#                  <ul class="navbar-nav ml-auto">#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'my-index' %}">Home</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'my-about' %}">About</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'my-courses' %}">Courses</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'my-blog' %}">Blog</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="{% url 'my-contact' %}">Contact</a>#}
+{#                     </li>#}
+{#                  </ul>#}
+{#               </div>#}
+{#            </nav>#}
+{#         </div>#}
+            <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="index.html"><img src="{% static 'img/logo.png' %}"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+{#                  <ul class="navbar-nav ml-auto">#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="index.html">Home</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="about.html">About</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="courses.html">Courses</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="blog.html">Blog</a>#}
+{#                     </li>#}
+{#                     <li class="nav-item">#}
+{#                        <a class="nav-link" href="contact.html">Contact</a>#}
+{#                     </li>#}
+{#                  </ul>#}
+                    <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'my-index' %}">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'my-about' %}">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'my-courses' %}">Courses</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'my-blog' %}">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'my-contact' %}">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- header section end -->
+
+         <!-- banner section start --> 
+{#         <div class="banner_section layout_padding">#}
+{#            <div class="container">#}
+{#               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">#}
+{#                  <div class="carousel-inner">#}
+{#                     <div class="carousel-item active">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">Welcome To AcadeWe.Where we dream bigger and aim higher.The school aims at producing students who can use the skills they have learned in real life situations.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                     <div class="carousel-item">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">All the courses we offer are affordable and our lecturers ensures that all our students have grasped all the concepts well.The lecturers are friendly towards the students and are always ready t6o help where a student has challlenges.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                     <div class="carousel-item">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">All the courses that we offer take from about one month to six months.At the end of each course a student is expected to take a test of some form to affirm that they have understood the concepts taught.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                  </div>#}
+{#               </div>#}
+{#            </div>#}
+{#         </div>#}
+            <h1>ACADEWE INSTITUTE</h1>
+             <P>Welcome To AcadeWe.Where we dream bigger and aim higher.The school aims at producing students who can use the skills they have learned in real life situations.</P>
+{#            <div class="banner_section layout_padding">#}
+{#            <div class="container">#}
+{#               <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">#}
+{#                  <div class="carousel-inner">#}
+{#                     <div class="carousel-item active">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">Welcome To AcadeWe.Where we dream bigger and aim higher.The school aims at producing students who can use the skills they have learned in real life situations.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                     <div class="carousel-item">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">All the courses we offer are affordable and our lecturers ensures that all our students have grasped all the concepts well.The lecturers are friendly towards the students and are always ready t6o help where a student has challlenges.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                     <div class="carousel-item">#}
+{#                        <div class="row">#}
+{#                           <div class="col-sm-12">#}
+{#                              <h1 class="banner_taital">Education Free Online Training Courses</h1>#}
+{#                              <p class="banner_text">All the courses that we offer take from about one month to six months.At the end of each course a student is expected to take a test of some form to affirm that they have understood the concepts taught.</p>#}
+{#                              <div class="started_text"><a href="#">Get Started</a></div>#}
+{#                           </div>#}
+{#                        </div>#}
+{#                     </div>#}
+{#                  </div>#}
+{#               </div>#}
+{#            </div>#}
+{#         </div>#}
+
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital">About Us</div>
+                  <p class="about_text">Acadewe INstitution was established in the year 2010.We have beeen able to train 2500 students and we have almost 100% completion of courses.Over the years we have been able to receive various awards such as Best Tech School in East Africa in 2015.We werte recognized by the government as one of the leading schools in coaching students to be tech geniuses.OUr school aims to ensure that students are able to acquire skills that the can use to get a job and even work for big companies such as Microsoft.</p>
+                  <div class="read_bt"><a href="{% url 'my-about' %}">Read More</a></div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'img/about-img.png' %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- courses section start -->
+      <div class="courses_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="courses_taital">Courses</h1>
+                  <p class="courses_text">We offer variuos courses such as</p>
+               </div>
+            </div>
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="courses_section_2">
+                        <div class="row">
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-1.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">Introduction to CSS</h3>
+                              <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-2.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">The Complete Web Development </h3>
+                              <p>Web development is the process of building websites and applications for the internet, or for a private network known as an intranet. Web development is not concerned with the design of a website; rather, it's all about the coding and programming that powers the website's functionality.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-3.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">PHP Tips, Tricks, and Techniques</h3>
+                              <p>This courses is offered to broaden the students understanding of php as a language.The course takes two months.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="courses_section_2">
+                        <div class="row">
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-1.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">Introduction to CSS</h3>
+                              <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-2.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">The Complete Web Development </h3>
+                              <p>Web development is the process of building websites and applications for the internet, or for a private network known as an intranet. Web development is not concerned with the design of a website; rather, it's all about the coding and programming that powers the website's functionality.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-3.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">PHP Tips, Tricks, and Techniques</h3>
+                              <p>This courses is offered to broaden the students understanding of php as a language.The course takes two months.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="courses_section_2">
+                        <div class="row">
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-1.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">Introduction to CSS</h3>
+                              <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-2.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">The Complete Web Development </h3>
+                              <p>Web development is the process of building websites and applications for the internet, or for a private network known as an intranet. Web development is not concerned with the design of a website; rather, it's all about the coding and programming that powers the website's functionality.</p>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="hover01 column">
+                                 <figure><img src="{% static 'img/img-3.png' %}"></figure>
+                              </div>
+                              <h3 class="introduction_text">PHP Tips, Tricks, and Techniques</h3>
+                              <p>This courses is offered to broaden the students understanding of php as a language.The course takes two months.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- courses section end -->
+      <!-- blog section start -->
+      <div class="blog_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="blog_taital">Our Blog</h1>
+                  <p class="blog_text">AcadeWe is an institution know in the whole of Africa due to its world class training.</p>
+               </div>
+            </div>
+            <div class="blog_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="blog_taital_1">Our Blog</div>
+                     <p class="ipsum_text">AcadeWe offers a 6-month full-time program to train backend engineers. Graduates will be prepared with the skills necessary to land entry-level software developer roles at companies of all sizes. Our curriculum is jointly developed by BloomTech and Amazon, and is based on critical knowledge, skills, and attributes required to succeed as a backend engineer. Each graduate of the new Enterprise Backend Development program will leave AcadeWe with over 1,300 hours of hands-on coding experience and will have the practical skills required to succeed at companies like Microsoft, without needing a 4-year Bachelors degree. Our curriculum covers the following topics and more: - Java Programming - Data Structures and Algorithms - Software Engineering - Testing - DynamoDB - Concurrency - Interview Preparation </p>
+                     <div class="readmore_bt"><a href="{% url 'my-blog' %}">Read More</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_img"><img src="{% static 'img/blog-bg.png' %}"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="contact_taital">Contact Us</h1>
+                  <p class="blog_text">One can contact us through</p>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-6 padding_left_0">
+                     <div class="map_main">
+                        <div class="map-responsive">
+                           <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Westlands+Nairobi+Kenya" width="600" height="500" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="mail_section_1">
+                        <input type="text" class="mail_text" placeholder="Name" name="Name">
+                        <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number"> 
+                        <input type="text" class="mail_text" placeholder="Email" name="Email">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                        <div class="send_bt"><a href="#">SEND</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">About</h3>
+                  <p class="footer_text">AcadeWe is dedicated to producing the best tech gurus.AcadeWe the home of EXELLENCE.</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Menu</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="{% url 'my-index' %}">Home</a></li>
+                        <li><a href="{% url 'my-about' %}">About</a></li>
+                        <li><a href="{% url 'my-courses' %}">Courses</a></li>
+                        <li><a href="{% url 'my-blog' %}">Blog</a></li>
+                        <li><a href="{% url 'my-contact' %}">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Useful Link</h1>
+                  <p class="dummy_text"><a href="https://www.facebook.com/">instagram</a></p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Contact Us</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address :Westlands,Nairobi</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : 0796211802</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : Acadewe@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2023 All Rights Reserved. Design by AcadeWe Institution</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+      <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+   </body>
+</html>
